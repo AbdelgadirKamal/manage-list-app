@@ -18,8 +18,10 @@ To run and test the app using docker:
      docker run --network=test --env-file=manage-list-env --name manage-list-app -t -d manage-list-app
   
 To deploy and test the app in K8s cluster, use manifst files in k8s-deployment folder:
-  kubectl create -f memcached-deploy.yaml
-  kubectl create -f memcached-service.yaml
-  kubectl create -f manage-list-cron.yaml
 
+  - kubectl create -f memcached-deploy.yaml
+  - kubectl create -f memcached-service.yaml
+  - kubectl create -f manage-list-cron.yaml
 
+(the container app "abdelgadirkamal/manage-list-app" is available in dockerhub)
+https://cloud.docker.com/repository/registry-1.docker.io/abdelgadirkamal/manage-list-app
