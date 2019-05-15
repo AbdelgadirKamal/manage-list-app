@@ -12,13 +12,17 @@ spec:
           - name: manage-list-container
             image: abdelgadirkamal/manage-list-app:latest
             env:
+            - name: LOG_LEVEL
+              value: "DEBUG"
             - name: GIT_REPO_URL
               value: "https://github.com/AbdelgadirKamal/testing.git"
             - name: GIT_REPO_PATH
               value: "/var/blacklist"
             - name: GIT_BLACKLIST_FILE
               value: "/var/blacklist/blacklist.yaml"
-            - name: MEMCACHED_SERVICE_IP
+            - name: MEMCACHED_TIMEOUT
+              vlaue: "60"
+            - name: MEMCACHED_SERVICE
               value: "memcached"
             - name: MEMCACHED_SERVICE_PORT
               value: "11211"
