@@ -3,6 +3,6 @@ GIT_REPO_URL=https://github.com/AbdelgadirKamal/testing.git
 GIT_REPO_PATH=/var/blacklist
 GIT_BLACKLIST_FILE=/var/blacklist/blacklist.yaml
 MEMCACHED_TIMEOUT=60
-MEMCACHED_SERVICE=memcached-backend
+MEMCACHED_SERVICE=memcached
 MEMCACHED_SERVICE_PORT=11211
 TZ=Australia/Sydney
