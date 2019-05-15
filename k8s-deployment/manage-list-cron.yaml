@@ -21,7 +21,7 @@ spec:
             - name: GIT_BLACKLIST_FILE
               value: "/var/blacklist/blacklist.yaml"
             - name: MEMCACHED_TIMEOUT
-              vlaue: "60"
+              value: "60"
             - name: MEMCACHED_SERVICE
               value: "memcached"
             - name: MEMCACHED_SERVICE_PORT
